@@ -45,6 +45,20 @@ export const SEED_SOURCES: SeedSource[] = [
     config: { includePaths: ["writing.*"], limit: 25, maxDiscoveryDepth: 2 },
   },
   {
+    slug: "digitalocean-blog",
+    name: "DigitalOcean Blog",
+    kind: "blog",
+    baseUrl: "https://www.digitalocean.com/blog",
+    config: { includePaths: ["blog.*"], limit: 25, maxDiscoveryDepth: 2 },
+  },
+  {
+    slug: "databricks-blog",
+    name: "Databricks Blog",
+    kind: "blog",
+    baseUrl: "https://www.databricks.com/blog",
+    config: { includePaths: ["blog.*"], limit: 25, maxDiscoveryDepth: 2 },
+  },
+  {
     slug: "nvidia-ir",
     name: "NVIDIA Investor Relations",
     kind: "ir",
