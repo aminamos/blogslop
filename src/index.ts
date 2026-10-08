@@ -24,9 +24,9 @@ app.onError((e, c) => {
 
 app.get("/api/health", (c) => c.json({ ok: true }));
 
-app.get("/api/sources", (c) => {
+app.get("/api/sources", async (c) => {
   const d = openDb(c.env);
-  return c.json(d.select().from(sources));
+  return c.json(await d.select().from(sources));
 });
 
 app.post("/api/sources/seed", async (c) => {
