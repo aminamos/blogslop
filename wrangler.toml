@@ -1,0 +1,16 @@
+name = "blogslop"
+main = "src/index.ts"
+compatibility_date = "2025-10-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "blogslop"
+database_id = "498c6b65-e018-4ca7-af72-eb504b932c27"
+migrations_dir = "migrations"
+
+[vars]
+PANGRAM_MODEL = "pangram-4"
+SEC_USER_AGENT = "blogslop/0.1 (contact: a@amos.codes)"
+
+[triggers]
+crons = ["17 * * * *"]
